@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:bibliotech_flutter/models/aluno.dart';
 import 'package:bibliotech_flutter/datasource/remote/aluno_remote.dart';
+import 'package:bibliotech_flutter/datasource/remote/livro_remote.dart';
 
 class HomeScreen extends StatefulWidget {
 final Aluno aluno;
@@ -19,7 +20,7 @@ class _HomePageState extends State<HomeScreen> {
   
 
   Future<void> fetchBooks() async {
-    final response = await http.get(Uri.parse('http://127.0.0.1:8000/api/aluno/login/'));
+    final response = await http.get(Uri.parse('http://127.0.0.1:8000/api/aluno/login/11954'));
 
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
@@ -30,7 +31,7 @@ class _HomePageState extends State<HomeScreen> {
   }
 
   Future<void> fetchReservedBooks() async {
-    final response = await http.get(Uri.parse('http://127.0.0.1:8000/api/aluno/login/'));
+    final response = await http.get(Uri.parse('http://127.0.0.1:8000/api/aluno/login/11954'));
 
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
