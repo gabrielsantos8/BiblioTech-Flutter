@@ -1,5 +1,3 @@
-import 'package:bibliotech_flutter/helpers/extensions.dart';
-
 class Aluno {
   final int aluno_id;
   final String nome;

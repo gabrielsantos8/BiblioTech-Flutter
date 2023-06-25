@@ -24,7 +24,7 @@ class Livro {
     return Livro(
       livro_id: mapa['id'] ?? '',
       titulo: mapa['titulo'] ?? '',
-      subTitulo: mapa['subTitulo'] ?? '',
+      subTitulo: mapa['subtitulo'] ?? '',
       isbn: mapa['isbn'] ?? '',
       autor: mapa['autor'] ?? '',
       editora: mapa['editora'] ?? '',

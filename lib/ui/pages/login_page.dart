@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 import 'package:bibliotech_flutter/ui/pages/home_page.dart';
 import 'package:bibliotech_flutter/models/aluno.dart';
 import 'package:bibliotech_flutter/datasource/remote/aluno_remote.dart';
@@ -33,6 +32,7 @@ class LoginPage extends StatelessWidget {
             Container(
               constraints: BoxConstraints(maxWidth: 200.0),
               child: TextFormField(
+                keyboardType: TextInputType.number,
                 controller: raController,
                 style: TextStyle(color: Theme.of(context).focusColor),
                 decoration: InputDecoration(
