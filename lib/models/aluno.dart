@@ -26,23 +26,23 @@ class Aluno {
       return Aluno(
           aluno_id: mapa[0]['id'] ?? '',
           nome: mapa[0]['nome'] ?? '',
-          ra: mapa[0]['ra'].toString() ?? '',
+          ra: mapa[0]['ra'].toString(),
           endereco: mapa[0]['endereco'] ?? '',
           cidade: mapa[0]['cidade'] ?? '',
           uf: mapa[0]['uf'] ?? '',
-          telefone: mapa[0]['telefone'].toString() ?? '',
+          telefone: mapa[0]['telefone'].toString(),
           curso_id: mapa[0]['curso_id'] ?? '',
           curso: mapa[0]['curso'] ?? '');
     }
     return Aluno(
-        aluno_id: 0 ?? 0,
-        nome: '' ?? '',
-        ra: '' ?? '',
-        endereco: '' ?? '',
-        cidade: '' ?? '',
-        uf: '' ?? '',
-        telefone: '' ?? '',
-        curso_id: 0 ?? 0,
-        curso: '' ?? '');
+        aluno_id: 0,
+        nome: '',
+        ra: '',
+        endereco: '',
+        cidade: '',
+        uf: '',
+        telefone: '',
+        curso_id: 0,
+        curso: '');
   }
 }

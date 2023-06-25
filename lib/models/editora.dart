@@ -1,12 +1,10 @@
-import 'package:bibliotech_flutter/helpers/extensions.dart';
-
 class Editora {
   final int editora_id;
   final String nome;
   final String endereco;
   final String cidade;
   final String uf;
-  final int telefone;
+  final String telefone;
 
   Editora({
     required this.editora_id,
