@@ -1,11 +1,7 @@
 import 'package:bibliotech_flutter/ui/widgets/lista_livros.dart';
 import 'package:flutter/material.dart';
-
-import 'package:bibliotech_flutter/datasource/remote/livro_remote.dart';
-import 'package:bibliotech_flutter/ui/pages/livro_detalhe.dart';
-import 'package:bibliotech_flutter/ui/widgets/item_lista';
 import 'package:bibliotech_flutter/models/aluno.dart';
-import 'package:bibliotech_flutter/ui/pages/aluno_detalhe';
+import 'package:bibliotech_flutter/ui/pages/aluno_detalhe.dart';
 
 class HomeScreen extends StatefulWidget {
   final Aluno aluno;

@@ -1,6 +1,6 @@
 import 'package:bibliotech_flutter/datasource/remote/livro_remote.dart';
 import 'package:bibliotech_flutter/ui/pages/livro_detalhe.dart';
-import 'package:bibliotech_flutter/ui/widgets/item_lista';
+import 'package:bibliotech_flutter/ui/widgets/item_lista.dart';
 import 'package:flutter/material.dart';
 
 Widget buildLivrosList(String parameter, String aluno_id) {
@@ -25,7 +25,7 @@ Widget buildLivrosList(String parameter, String aluno_id) {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => LivroDetalhe(),
+                              builder: (context) => LivroDetalhes(snapshot.data![index]),
                             ),
                           );
                         },
