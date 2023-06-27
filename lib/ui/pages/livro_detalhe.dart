@@ -67,13 +67,20 @@ class _LivroDetalhesState extends State<LivroDetalhes>
                     TableCell(
                       child: Text(
                         'Título',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                     TableCell(
                       child: Text(
                         widget.livro.titulo,
-                        style: TextStyle(color: Theme.of(context).focusColor),
+                        style: TextStyle(
+                          color: Theme.of(context).focusColor,
+                          fontSize: 16,
+                        ),
                       ),
                     ),
                   ],
@@ -83,13 +90,20 @@ class _LivroDetalhesState extends State<LivroDetalhes>
                     TableCell(
                       child: Text(
                         'Sub-Título',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                     TableCell(
                       child: Text(
                         widget.livro.subTitulo,
-                        style: TextStyle(color: Theme.of(context).focusColor),
+                        style: TextStyle(
+                          color: Theme.of(context).focusColor,
+                          fontSize: 16,
+                        ),
                       ),
                     ),
                   ],
@@ -99,13 +113,20 @@ class _LivroDetalhesState extends State<LivroDetalhes>
                     TableCell(
                       child: Text(
                         'Ano',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                     TableCell(
                       child: Text(
                         widget.livro.ano.toString(),
-                        style: TextStyle(color: Theme.of(context).focusColor),
+                        style: TextStyle(
+                          color: Theme.of(context).focusColor,
+                          fontSize: 16,
+                        ),
                       ),
                     ),
                   ],
@@ -115,13 +136,20 @@ class _LivroDetalhesState extends State<LivroDetalhes>
                     TableCell(
                       child: Text(
                         'ISBN',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                     TableCell(
                       child: Text(
                         widget.livro.isbn,
-                        style: TextStyle(color: Theme.of(context).focusColor),
+                        style: TextStyle(
+                          color: Theme.of(context).focusColor,
+                          fontSize: 16,
+                        ),
                       ),
                     ),
                   ],
@@ -131,13 +159,20 @@ class _LivroDetalhesState extends State<LivroDetalhes>
                     TableCell(
                       child: Text(
                         'Local',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                     TableCell(
                       child: Text(
                         widget.livro.local,
-                        style: TextStyle(color: Theme.of(context).focusColor),
+                        style: TextStyle(
+                          color: Theme.of(context).focusColor,
+                          fontSize: 16,
+                        ),
                       ),
                     ),
                   ],
@@ -147,7 +182,11 @@ class _LivroDetalhesState extends State<LivroDetalhes>
                     TableCell(
                       child: Text(
                         'Editora',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                     TableCell(
@@ -156,6 +195,7 @@ class _LivroDetalhesState extends State<LivroDetalhes>
                           widget.livro.editora,
                           style: TextStyle(
                             color: Theme.of(context).focusColor,
+                            fontSize: 16,
                             decoration: TextDecoration.underline,
                           ),
                         ),
@@ -171,7 +211,11 @@ class _LivroDetalhesState extends State<LivroDetalhes>
                     TableCell(
                       child: Text(
                         'Autor',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                     TableCell(
@@ -180,6 +224,7 @@ class _LivroDetalhesState extends State<LivroDetalhes>
                           widget.livro.autor,
                           style: TextStyle(
                             color: Theme.of(context).focusColor,
+                            fontSize: 16,
                             decoration: TextDecoration.underline,
                           ),
                         ),
@@ -199,7 +244,6 @@ class _LivroDetalhesState extends State<LivroDetalhes>
   }
 
   void _mostrarDetalhesEditora(int editoraId) async {
-    
     EditoraRemote editoraRemote = EditoraRemote();
     Editora editora = await editoraRemote.get(editoraId.toString());
 
@@ -212,11 +256,26 @@ class _LivroDetalhesState extends State<LivroDetalhes>
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text('Nome: ${editora.nome}'),
-              Text('Endereço: ${editora.endereco}'),
-              Text('Cidade: ${editora.cidade}'),
-              Text('UF: ${editora.uf}'),
-              Text('Telefone: ${editora.telefone}'),
+              Text(
+                'Nome: ${editora.nome}',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'Endereço: ${editora.endereco}',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'Cidade: ${editora.cidade}',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'UF: ${editora.uf}',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'Telefone: ${editora.telefone}',
+                style: TextStyle(fontSize: 16),
+              ),
             ],
           ),
           actions: [
@@ -245,11 +304,26 @@ class _LivroDetalhesState extends State<LivroDetalhes>
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text('Nome: ${autor.nome}'),
-              Text('Endereço: ${autor.endereco}'),
-              Text('Cidade: ${autor.cidade}'),
-              Text('UF: ${autor.uf}'),
-              Text('Telefone: ${autor.telefone}'),
+              Text(
+                'Nome: ${autor.nome}',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'Endereço: ${autor.endereco}',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'Cidade: ${autor.cidade}',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'UF: ${autor.uf}',
+                style: TextStyle(fontSize: 16),
+              ),
+              Text(
+                'Telefone: ${autor.telefone}',
+                style: TextStyle(fontSize: 16),
+              ),
             ],
           ),
           actions: [

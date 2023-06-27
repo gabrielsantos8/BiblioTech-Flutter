@@ -19,34 +19,121 @@ class AlunoDetalhe extends StatelessWidget {
           children: [
             ListTile(
               title: Text(
-                'Nome: ${aluno?.nome}',
-                style: TextStyle(color: Theme.of(context).focusColor),
+                'Nome:',
+                style: TextStyle(
+                  color: Theme.of(context).focusColor,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               subtitle: Text(
-                'RA: ${aluno?.ra}',
-                style: TextStyle(color: Theme.of(context).focusColor),
+                '${aluno?.nome}',
+                style: TextStyle(
+                  color: Theme.of(context).focusColor,
+                  fontSize: 16,
+                ),
               ),
             ),
             ListTile(
               title: Text(
-                'Endereço: ${aluno?.endereco}',
-                style: TextStyle(color: Theme.of(context).focusColor),
+                'RA:',
+                style: TextStyle(
+                  color: Theme.of(context).focusColor,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               subtitle: Text(
-                'Cidade: ${aluno?.cidade}, UF: ${aluno?.uf}',
-                style: TextStyle(color: Theme.of(context).focusColor),
+                '${aluno?.ra}',
+                style: TextStyle(
+                  color: Theme.of(context).focusColor,
+                  fontSize: 16,
+                ),
               ),
             ),
             ListTile(
               title: Text(
-                'Telefone: ${aluno?.telefone}',
-                style: TextStyle(color: Theme.of(context).focusColor),
+                'Endereço:',
+                style: TextStyle(
+                  color: Theme.of(context).focusColor,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              subtitle: Text(
+                '${aluno?.endereco}',
+                style: TextStyle(
+                  color: Theme.of(context).focusColor,
+                  fontSize: 16,
+                ),
               ),
             ),
             ListTile(
               title: Text(
-                'Curso: ${aluno?.curso}',
-                style: TextStyle(color: Theme.of(context).focusColor),
+                'Cidade:',
+                style: TextStyle(
+                  color: Theme.of(context).focusColor,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              subtitle: Text(
+                '${aluno?.cidade}',
+                style: TextStyle(
+                  color: Theme.of(context).focusColor,
+                  fontSize: 16,
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text(
+                'UF:',
+                style: TextStyle(
+                  color: Theme.of(context).focusColor,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              subtitle: Text(
+                '${aluno?.uf}',
+                style: TextStyle(
+                  color: Theme.of(context).focusColor,
+                  fontSize: 16,
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text(
+                'Telefone:',
+                style: TextStyle(
+                  color: Theme.of(context).focusColor,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              subtitle: Text(
+                '${aluno?.telefone}',
+                style: TextStyle(
+                  color: Theme.of(context).focusColor,
+                  fontSize: 16,
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text(
+                'Curso:',
+                style: TextStyle(
+                  color: Theme.of(context).focusColor,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              subtitle: Text(
+                '${aluno?.curso}',
+                style: TextStyle(
+                  color: Theme.of(context).focusColor,
+                  fontSize: 16,
+                ),
               ),
             ),
           ],
